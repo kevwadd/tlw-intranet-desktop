@@ -190,7 +190,6 @@ echo '</pre>';
 		<?php  if ( isset($_REQUEST['group-id']) ) { ?>
 		<?php if (count($active_contacts) == 0) { ?>
 		<div class="no-name-message text-center">
-			<?php echo '<pre>';print_r(count($active_contacts));echo '</pre>'; ?>
 			<i class="fa fa-user-circle fa-4x block sb-icon"></i>
 			<a href="?contact-actions=add-contact&group-id=<?php echo sanitize_title($_REQUEST['group-id']); ?>" id="add-contact" class="btn btn-default btn-block caps"><i class="fa fa-plus-circle pull-left"></i> Add contact</a>
 		</div>

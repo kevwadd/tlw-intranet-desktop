@@ -24,10 +24,6 @@ global $user_contacts;
 	$add_contact_errors['fname'] = '<span class="help-block">Please enter a contact first name.</span>';	
 	}
 	
-	echo '<pre class="debug">';
-	print_r($_POST);
-	
-	
 	if (empty($add_contact_errors)) {
 		
 		$nc_group_id = $_POST['group-id'];
@@ -49,11 +45,7 @@ global $user_contacts;
 		$user_contacts_raw = get_user_meta($current_user->ID, 'user_contacts', true);
 		$user_contacts = unserialize($user_contacts_raw);
 		array_multisort($user_contacts);
-		
 		}
-		print_r($user_contacts);
 	}
-	
-	echo '</pre>';	
 }	
 ?>

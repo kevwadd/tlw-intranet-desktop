@@ -25,8 +25,10 @@ if ( isset($_POST['add-group']) ) {
 		array_multisort($users_groups);
 	}
 	
+/*
 	echo '<pre class="debug">';
 	print_r($users_groups);
 	echo '</pre>';	
+*/
 }	
 ?>
